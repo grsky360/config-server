@@ -19,4 +19,9 @@ public class ConfigFileRepository extends FileRepository implements ConfigReposi
     public Config findById(Tuple2<String, String> objects) {
         return null;
     }
+
+    @Override
+    public void save(Config entity) {
+
+    }
 }

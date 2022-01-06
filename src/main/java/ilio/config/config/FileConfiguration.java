@@ -1,7 +1,6 @@
 package ilio.config.config;
 
 import ilio.config.model.enums.ValueType;
-import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.enterprise.context.ApplicationScoped;
 

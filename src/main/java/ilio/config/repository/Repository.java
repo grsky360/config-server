@@ -11,4 +11,6 @@ public interface Repository<E, ID> {
     List<E> findAll();
 
     E findById(ID id);
+
+    void save(E entity);
 }
