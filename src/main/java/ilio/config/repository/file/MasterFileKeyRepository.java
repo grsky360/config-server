@@ -15,7 +15,6 @@ import java.util.List;
 public class MasterFileKeyRepository extends FileRepository implements MasterKeyRepository {
 
     @Override
-    @SneakyThrows
     public List<MasterKey> findAll() {
         return parseAll();
     }

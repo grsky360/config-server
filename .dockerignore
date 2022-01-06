@@ -3,4 +3,7 @@
 !build/*-runner.jar
 !build/lib/*
 !build/quarkus-app/*
-target
+!target/*-runner
+!target/*-runner.jar
+!target/lib/*
+!target/quarkus-app/*

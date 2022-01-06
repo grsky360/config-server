@@ -12,14 +12,14 @@ public class FileConfiguration {
     private static final String DATA_CONFIG_NAME = "data";
 
     @ConfigProperty(name = "config.file-base", defaultValue = "./config")
-    private String fileBase;
+    String fileBase;
 
     public String getFileBase() {
         return fileBase;
     }
 
     public String resolve(String... paths) {
-        return (fileBase + "/" + String.join("/", paths)).replaceAll("/+", "/").replaceAll("/$", "");
+        return (getFileBase() + "/" + String.join("/", paths)).replaceAll("/+", "/").replaceAll("/$", "");
     }
 
     public String resolveMasterKeyConfig() {
